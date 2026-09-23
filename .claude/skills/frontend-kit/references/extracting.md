@@ -126,4 +126,40 @@ Extracted from <reference>. Values sampled from pixels unless marked ~approx.
 
 ## 9. What the reference doesn't cover
 <empty/error/loading states, scale behavior, a11y gaps — to be designed fresh>
+
+
+
+
+
+
+## Composition Fidelity
+
+The reference image's spatial arrangement is part of the design.
+
+When implementing a reference-driven screen, preserve:
+
+- relative component positions
+- column count
+- row structure
+- component width relationships
+- component height relationships
+- alignment between neighboring cards
+- major gutters
+- section spacing
+- visual grouping
+- intentional asymmetry
+- placement of navigation, header, content and secondary regions
+
+Do not reorganize components into a generic responsive dashboard layout simply
+because another grid arrangement is easier to implement.
+
+If the reference uses:
+
+- 3 columns, preserve 3 columns
+- a 2:1 width relationship, preserve it
+- a wide chart beside two smaller charts, preserve that hierarchy
+- a specific row/column grouping, preserve that grouping
+
+Responsive behavior may adapt the composition at smaller breakpoints, but the
+desktop composition should reproduce the reference structure.
 ```
