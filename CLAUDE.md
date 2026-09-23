@@ -21,3 +21,15 @@ This repository is a reusable React frontend starter template, not an applicatio
 - `npm run dev` — start the local dev server
 - `npm run build` — type-check and build for production
 - `npm run lint` — lint with oxlint
+
+
+
+
+## UI work (frontend-kit)
+
+This project's UI follows `.claude/skills/frontend-kit`. Read `.claude/skills/frontend-kit/SKILL.md` before building or editing any UI.
+
+- **How it's built** (React + shadcn/ui, file layout, component conventions, the token bridge) is fixed and lives in `.claude/skills/frontend-kit/references/engineering.md`. Before scaffolding anything, check whether a compatible engineering foundation already exists in this project — see engineering.md's detection section. If one exists, don't scaffold, reinstall, or restructure it.
+- **What it looks like** (colors, type, radius, spacing, component styling) is specific to this project and lives in `.claude/skills/frontend-kit/references/design.md`, generated from a reference image via `/extract-design`.
+
+If `design.md` still says NOT YET EXTRACTED, run `/extract-design` before building any styled UI.
